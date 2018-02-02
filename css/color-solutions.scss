@@ -1,0 +1,268 @@
+.color-solutions {
+  //height: 750px;
+  padding: 75px 0;
+  .color-solutions_flex-container {
+    padding: 180px 0 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    figure {
+      width: 240px;
+      margin: 0 auto;
+      -webkit-border-radius: 8px;
+      border-radius: 8px;
+      padding: 50px 45px;
+      position: relative;
+      .color-solutions_flex-container_caption-for-model {
+        margin: 0 0 30px;
+        h2 {
+          color: $grayForH;
+          font-family: 'PTSans-Bold', sans-serif;
+          font-size: 24px;
+          text-align: center;
+          @media (min-width: 481px) and (max-width: 768px) {
+            font-size: 20px;
+          }
+          @media (min-width: 100px) and (max-width: 480px) {
+            margin: 0 0 15px;
+          }
+        }
+        p {
+          font-family: 'PTSans-Regular', sans-serif;
+          font-size: 16px;
+          color: $pGray;
+          text-align: center;
+          @media (min-width: 481px) and (max-width: 768px) {
+            font-size: 14px;
+          }
+        }
+      }
+      .color-solutions_flex-container_photo {
+        height: 234px;
+        width: 98px;
+        margin: 0 auto;
+      }
+      .photo1 {
+        background: url("../img/color-solutions/1.png") no-repeat 100% 100%;
+        -webkit-background-size: contain;
+        background-size: contain;
+      }
+      .photo2 {
+        background: url("../img/color-solutions/2.png") no-repeat 100% 100%;
+        -webkit-background-size: contain;
+        background-size: contain;
+      }.photo3 {
+         background: url("../img/color-solutions/3.png") no-repeat 100% 100%;
+         -webkit-background-size: contain;
+         background-size: contain;
+       }
+      .color-solutions_flex-container_price {
+        margin: 25px 0;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        .color-solutions_flex-container_price__old-price {
+          display: none;
+          font-family: 'PTSans-Regular', sans-serif;
+          font-size: 24px;
+          color: $grayForH;
+          text-decoration: line-through;
+          @media (min-width: 481px) and (max-width: 768px) {
+            font-size: 22px;
+          }
+        }
+        .color-solutions_flex-container_price__new-price {
+          text-align: center;
+          font-family: 'PTSans-Bold', sans-serif;
+          font-size: 30px;
+          color: $grayForH;
+          text-align: center;
+          @media (min-width: 481px) and (max-width: 768px) {
+            font-size: 26px;
+          }
+        }
+      }
+      a {
+        display: none;
+        position: absolute;
+        bottom: -38px;
+        left: 21%;
+        margin: 45px 0 0;
+        .button {
+          button {
+            padding: 20px 50px;
+            @media (min-width: 100px) and (max-width: 768px) {
+              font-size: 18px;
+            }
+            @media (min-width: 100px) and (max-width: 480px) {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+      .color-solutions_flex-container_figure_sale {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 130px;
+        height: 130px;
+        background: url("../img/color-solutions/sale.png") no-repeat 100% 100%;
+        -webkit-background-size: contain;
+        background-size: contain;
+      }
+      &:hover, &:focus {
+        cursor: pointer;
+        -webkit-box-shadow: 0 0 50px 4px $forBoxShadow;
+        box-shadow: 0 0 50px 4px $forBoxShadow;
+        a {
+          display: block;
+        }
+        .color-solutions_flex-container_price__old-price {
+          display: block;
+        }
+        .color-solutions_flex-container_price__new-price {
+          color: $red;
+        }
+        .color-solutions_flex-container_price {
+          -webkit-box-pack: justify;
+          -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+          justify-content: space-between;
+        }
+        .color-solutions_flex-container_figure_sale {
+          display: block;
+        }
+      }
+      @media (min-width: 100px) and (max-width: 1024px) {
+        margin: 0 auto 60px;
+      }
+      @media (min-width: 100px) and (max-width: 480px) {
+        margin: 0 auto 90px;
+      }
+    }
+    @media (min-width: 100px) and (max-width: 480px) {
+      .color-solutions_flex-container_figure1, .color-solutions_flex-container_figure3  {
+        cursor: pointer;
+        -webkit-box-shadow: 0 0 50px 4px $forBoxShadow;
+        box-shadow: 0 0 50px 4px $forBoxShadow;
+        a {
+          display: block;
+        }
+        .color-solutions_flex-container_price {
+          margin: 25px 0;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          -webkit-box-pack: justify;
+          -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+          justify-content: space-between;
+          .color-solutions_flex-container_price__old-price {
+            display: block !important;
+            font-family: 'PTSans-Regular', sans-serif;
+            font-size: 24px;
+            color: $grayForH;
+            text-decoration: line-through;
+            @media (min-width: 481px) and (max-width: 768px) {
+              font-size: 22px;
+            }
+          }
+          .color-solutions_flex-container_price__new-price {
+            //text-align: center;
+            font-family: 'PTSans-Bold', sans-serif;
+            font-size: 30px;
+            color: $red;
+            text-align: center;
+            @media (min-width: 481px) and (max-width: 768px) {
+              font-size: 26px;
+            }
+          }
+        }
+        .color-solutions_flex-container_figure_sale {
+          display: block;
+        }
+      }
+    }
+    .color-solutions_flex-container_figure2 {
+      cursor: pointer;
+      -webkit-box-shadow: 0 0 50px 4px $forBoxShadow;
+      box-shadow: 0 0 50px 4px $forBoxShadow;
+      a {
+        display: block;
+      }
+      .color-solutions_flex-container_price {
+        margin: 25px 0;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        .color-solutions_flex-container_price__old-price {
+          display: block !important;
+          font-family: 'PTSans-Regular', sans-serif;
+          font-size: 24px;
+          color: $grayForH;
+          text-decoration: line-through;
+          @media (min-width: 481px) and (max-width: 768px) {
+            font-size: 22px;
+          }
+        }
+        .color-solutions_flex-container_price__new-price {
+          //text-align: center;
+          font-family: 'PTSans-Bold', sans-serif;
+          font-size: 30px;
+          color: $red;
+          text-align: center;
+          @media (min-width: 481px) and (max-width: 768px) {
+            font-size: 26px;
+          }
+        }
+      }
+      .color-solutions_flex-container_figure_sale {
+        display: block;
+      }
+    }
+  }
+  @media (min-width: 100px) and (max-width: 480px) {
+    padding: 75px 0 0;
+  }
+}
+

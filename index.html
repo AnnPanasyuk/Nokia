@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nokia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="header_flex-container">
+                <div class="logo"></div>
+                <div class="top-menu">
+                    <a href="#distinctive-features">Преимущества</a>
+                    <a href="#color-solutions">Модели</a>
+                    <a href="#delivery">Доставка</a>
+                    <a href="#reviews">Отзывы</a>
+                </div>
+                <div onclick="hiddenMenu(1)" class="header_flex-container_close" id="md-after">
+                    <button class="container-for-close">
+                        <div class="back-container-for-close">
+                            <div class="cross-1 cross-2 animation">
+
+                            </div>
+                        </div>
+                    </button>
+                </div>
+                <div onclick="hiddenMenu(2)" class="header_flex-container_beefburger" id="md-before"></div>
+            </div>
+        </div>
+    </div>
+    <div class="banner-and-distinctive-features">
+        <div class="distinctive-features_container-for-parallax" data-offset="0">
+            <div class="layer-bg parallax" data-offset="0">
+                <div class="layer-1 clerfix parallax" data-offset="20"></div>
+            </div>
+        </div>
+        <ul id="dropdown-menu">
+            <li onclick="hiddenMenu(0)"><a href="#distinctive-features">Преимущества</a></li>
+            <li onclick="hiddenMenu(0)"><a href="#color-solutions">Модели</a></li>
+            <li onclick="hiddenMenu(0)"><a href="#delivery">Доставка</a></li>
+            <li onclick="hiddenMenu(0)"><a href="#reviews">Отзывы</a></li>
+        </ul>
+        <div class="container">
+            <div class="banner">
+                <div class="banner_badge-with-discount"></div>
+                <div class="banner_text">
+                    <h2>Легендарная модель<br> по лучшей цене</h2>
+                    <div class="banner_text_price">
+                        <p class="banner_text__new-price">1500грн</p>
+                        <p class="banner_text__old-price">3000грн</p>
+                    </div>
+                    <p class="banner_text_description">Точная копия телефона Nokia 6700 обладает лаконичным и аккуратным дизайном. Корпус выполнен из металла, что делает данный телефон очень надежным для повседневного исопльзования. Высокое качество сборки и прочный механизм крепления делаеют классическую модель практичной.</p>
+                </div>
+                <a id="order1" data-fancybox data-src="#pop-up" href="javascript:;">
+                    <div class="button">
+                        <button>Оформить заказ</button>
+                    </div>
+                </a>
+            </div>
+            <div class="distinctive-features" id="distinctive-features">
+                <div class="distinctive-features_text text">
+                    <div class="bg-for-caption">
+                        <p>NOKIA 6700</p>
+                    </div>
+                    <div class="features_text">
+                        <h2>Отличительные способности</h2>
+                        <p>Классическая модель до сих пор остается любимой благодаря<br> следующим особенностям:</p>
+                    </div>
+                </div>
+                <div class="distinctive-features_flex-container" id="distinctive-features_flex-container">
+                    <figure class="distinctive-features_flex-container_figure1">
+                        <div class="distinctive-features_container-for-img">
+                            <div class="distinctive-features__img img1"></div>
+                        </div>
+                        <div class="distinctive-features_flex-container_text">
+                            <p class="distinctive-features_flex-container_text__caption distinctive-features_flex-container_text__caption1">Стальной корпус</p>
+                            <p class="distinctive-features_flex-container_text__description">Поверхность телефона изготовлена из нержавеющей стали. Рамка с округылми окончаниями надежно защищает от повреждений.</p>
+                        </div>
+                    </figure>
+                    <figure class="distinctive-features_flex-container_figure2">
+                        <div class="distinctive-features_container-for-img">
+                            <div class="distinctive-features__img img2"></div>
+                        </div>
+                        <div class="distinctive-features_flex-container_text">
+                            <p class="distinctive-features_flex-container_text__caption distinctive-features_flex-container_text__caption2">Дисплей 2.2 дюйма</p>
+                            <p class="distinctive-features_flex-container_text__description">Дисплей хорошо защищен стальным корпусом и устойчив к царапинам. Владельцам в редких случаях приходиться прибегать к замене.</p>
+                        </div>
+                    </figure>
+                    <figure class="distinctive-features_flex-container_figure3">
+                        <div class="distinctive-features_container-for-img">
+                            <div class="distinctive-features__img img3"></div>
+                        </div>
+                        <div class="distinctive-features_flex-container_text">
+                            <p class="distinctive-features_flex-container_text__caption distinctive-features_flex-container_text__caption3">Аккумулятор</p>
+                            <p class="distinctive-features_flex-container_text__description">В режиме ожидания телефон может проработать до 300 часов. Даже в случае повреждения заменить его на новый обойдеться в мизерную цену.</p>
+                        </div>
+                    </figure>
+                    <figure class="distinctive-features_flex-container_figure4">
+                        <div class="distinctive-features_container-for-img">
+                            <div class="distinctive-features__img img4"></div>
+                        </div>
+                        <div class="distinctive-features_flex-container_text">
+                            <p class="distinctive-features_flex-container_text__caption distinctive-features_flex-container_text__caption4">2 Sim-карты</p>
+                            <p class="distinctive-features_flex-container_text__description">Очевидные преимущества заключаются в том, что отпадает необходимость в  покупке второго телефона и легко сэкономить на звонки другому оператору.</p>
+                        </div>
+                    </figure>
+                    <figure class="distinctive-features_flex-container_figure5">
+                        <div class="distinctive-features_container-for-img">
+                            <div class="distinctive-features__img img5"></div>
+                        </div>
+                        <div class="distinctive-features_flex-container_text">
+                            <p class="distinctive-features_flex-container_text__caption distinctive-features_flex-container_text__caption5">Камера</p>
+                            <p class="distinctive-features_flex-container_text__description">Телефон оснащен 2-мегапиксельной камерой со светодиодной вспышкой и вспомогательной подсветкой для точной фокусировки.</p>
+                        </div>
+                    </figure>
+                    <figure class="distinctive-features_flex-container_figure6">
+                        <div class="distinctive-features_container-for-img">
+                            <div class="distinctive-features__img img6"></div>
+                        </div>
+                        <div class="distinctive-features_flex-container_text">
+                            <p class="distinctive-features_flex-container_text__caption distinctive-features_flex-container_text__caption6">Звук</p>
+                            <p class="distinctive-features_flex-container_text__description">Телефон обладает полифоническим динамиком, благодаря которому он имеет высокие показатели громкости и частоты звучания.</p>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="color-solutions" id="color-solutions">
+        <div class="container">
+            <div class="color-solutions_text text">
+                <div class="bg-for-caption">
+                    <p>NOKIA 6700</p>
+                </div>
+                <div class="features_text">
+                    <h2>Цветовые решения</h2>
+                    <p>Идеальные цветовые решения лучшим образом с металлическим корпусом. Выберите свой цвет Nokia 6700.</p>
+                </div>
+            </div>
+            <div class="color-solutions_flex-container">
+                <figure class="color-solutions_flex-container_figure1" id="color-solutions_flex-container_figure1">
+                    <div class="color-solutions_flex-container_caption-for-model">
+                        <h2>Black</h2>
+                        <p>Nokia 6700</p>
+                    </div>
+                    <div class="color-solutions_flex-container_photo photo1"></div>
+                    <div class="color-solutions_flex-container_price">
+                        <p class="color-solutions_flex-container_price__old-price">3000 грн</p>
+                        <p class="color-solutions_flex-container_price__new-price">1500 грн</p>
+                    </div>
+                    <a class="order1" id="order2_1" data-fancybox data-src="#pop-up" href="javascript:;">
+                        <div class="button">
+                            <button>Заказать</button>
+                        </div>
+                    </a>
+                    <div class="color-solutions_flex-container_figure_sale"></div>
+                </figure>
+                <figure class="color-solutions_flex-container_figure2" id="color-solutions_flex-container_figure2">
+                    <div class="color-solutions_flex-container_caption-for-model">
+                        <h2>Silver</h2>
+                        <p>Nolia 6700</p>
+                    </div>
+                    <div class="color-solutions_flex-container_photo photo2"></div>
+                    <div class="color-solutions_flex-container_price">
+                        <p class="color-solutions_flex-container_price__old-price">3000 грн</p>
+                        <p class="color-solutions_flex-container_price__new-price">1500 грн</p>
+                    </div>
+                    <a id="order2_2" data-fancybox data-src="#pop-up" href="javascript:;">
+                        <div class="button">
+                            <button>Заказать</button>
+                        </div>
+                    </a>
+                    <div class="color-solutions_flex-container_figure_sale"></div>
+                </figure>
+                <figure class="color-solutions_flex-container_figure3" id="color-solutions_flex-container_figure3">
+                    <div class="color-solutions_flex-container_caption-for-model">
+                        <h2>Gold</h2>
+                        <p>Nokia 6700</p>
+                    </div>
+                    <div class="color-solutions_flex-container_photo photo3"></div>
+                    <div class="color-solutions_flex-container_price">
+                        <p class="color-solutions_flex-container_price__old-price">3000 грн</p>
+                        <p class="color-solutions_flex-container_price__new-price">1500 грн</p>
+                    </div>
+                    <a class="order3" id="order2_3" data-fancybox data-src="#pop-up" href="javascript:;">
+                        <div class="button">
+                            <button>Заказать</button>
+                        </div>
+                    </a>
+                    <div class="color-solutions_flex-container_figure_sale"></div>
+                </figure>
+            </div>
+        </div>
+    </div>
+    <div class="characteristic">
+        <div class="container">
+            <div class="characteristic_text text">
+                <div class="bg-for-caption">
+                    <p>NOKIA 6700</p>
+                </div>
+                <div class="features_text">
+                    <h2>Характеристики</h2>
+                    <p>Производители Nokia 6700 снабдили телефон JPS-приемником, средствами коммуникаци, аккумулятором на 960 mAh.</p>
+                </div>
+            </div>
+            <div class="characteristic_flex-container">
+                <div class="fade">
+                    <div class="characteristic_fade_img img1"></div>
+                    <div class="characteristic_fade_img img2"></div>
+                    <div class="characteristic_fade_img img3"></div>
+                    <div class="characteristic_fade_img img4"></div>
+                    <div class="characteristic_fade_img img5"></div>
+                    <div class="characteristic_fade_img img6"></div>
+                    <div class="characteristic_fade_img img7"></div>
+                    <div class="characteristic_fade_img img8"></div>
+                </div>
+                <div class="characteristic_flex-container_info">
+                    <div class="characteristic_flex-container_info_row">
+                        <span>Размер</span>
+                        <p>105x45x11 мм</p>
+                    </div>
+                    <div class="characteristic_flex-container_info_row">
+                        <span>Вес</span>
+                        <p>114г</p>
+                    </div>
+                    <div class="characteristic_flex-container_info_row">
+                        <span>Материал корпуса</span>
+                        <p>Металл</p>
+                    </div>
+                    <div class="characteristic_flex-container_info_row">
+                        <span>В режиме ожидания</span>
+                        <p>300 часов</p>
+                    </div>
+                    <div class="characteristic_flex-container_info_row">
+                        <span>В режиме разговора</span>
+                        <p>400 минут</p>
+                    </div>
+                    <div class="characteristic_flex-container_info_row">
+                        <span>Сеть</span>
+                        <p>GSM 900/1800</p>
+                    </div> <div class="characteristic_flex-container_info_row">
+                        <span>Экран</span>
+                        <p>65000 цветов TFT True Colour</p>
+                    </div>
+                    <div class="characteristic_flex-container_info_row">
+                        <span>Дисплей</span>
+                        <p>2.2 дюйма</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="characteristic_flex-container characteristic_flex-container2">
+                <div class="characteristic_flex-container_info">
+                    <div class="characteristic_flex-container_info_row">
+                        <span>Камера</span>
+                        <p>3 mpx</p>
+                    </div>
+                    <div class="characteristic_flex-container_info_row">
+                        <span>Звук</span>
+                        <p>64 полифония, 3D mp3/mp4</p>
+                    </div>
+                    <div class="characteristic_flex-container_info_row">
+                        <span>Память</span>
+                        <p>micro SD, до 16 Гб</p>
+                    </div>
+                    <div class="characteristic_flex-container_info_row">
+                        <span>Доп. функции</span>
+                        <p>Календарь, Будильник, и т.п.</p>
+                    </div>
+                    <div class="characteristic_flex-container_info_row">
+                        <span>Музыка/Видео</span>
+                        <p>mp3, 3gp, mp4</p>
+                    </div>
+                    <div class="characteristic_flex-container_info_row">
+                        <span>Аккумулятор</span>
+                        <p>960 mAh</p>
+                    </div>
+                    <div class="characteristic_flex-container_info_row">
+                        <span>Производитель</span>
+                        <p>Корея</p>
+                    </div>
+                    <div class="characteristic_flex-container_info_row">
+                        <span>Коммуникации</span>
+                        <p>USB 2.0, Bluetooth 2.1</p>
+                    </div>
+                </div>
+                <div class="characteristic_flex-container_front-tback"></div>
+            </div>
+        </div>
+    </div>
+    <div class="call-to-action">
+        <div class="container">
+            <div class="call-to-action_row">
+                <p>Готов заказать Nokia 6700? Не упусти уникальную акцию! <span>-50&#37; скидка!</span></p>
+                <a data-fancybox data-src="#pop-up" href="javascript:;" id="order3">
+                    <div class="button">
+                        <button>Оформить заказ</button>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="delivery" id="delivery">
+        <div class="container">
+            <div class="characteristic_text text">
+                <div class="bg-for-caption">
+                    <p>NOKIA 6700</p>
+                </div>
+                <div class="features_text">
+                    <h2>Оплата и доставка</h2>
+                    <p>Заказ будет выслан Вам наложным платежом. Вы платите только тогда, когда товар уже прийдет в Ваше отделение.</p>
+                </div>
+            </div>
+            <div class="delivery_flex-container">
+                <figure>
+                    <div class="delivery_flex-container_figure_img img1"></div>
+                    <p class="delivery_flex-container_figure_caption">ЗАЯВКА</p>
+                    <p>Вы оставляете<br> заявку</p>
+                </figure>
+                <figure>
+                    <div class="delivery_flex-container_figure_img img2"></div>
+                    <p class="delivery_flex-container_figure_caption">ОФОРМЛЕНИЕ</p>
+                    <p>Мы связывамся<br> с Вами</p>
+                </figure>
+                <figure>
+                    <div class="delivery_flex-container_figure_img img3"></div>
+                    <p class="delivery_flex-container_figure_caption">ДОСТАВКА</p>
+                    <p>Отправляем<br> Вашу посылку</p>
+                </figure>
+                <figure>
+                    <div class="delivery_flex-container_figure_img img4"></div>
+                    <p class="delivery_flex-container_figure_caption">ОПЛАТА</p>
+                    <p>Вы оплачиваете<br> ее на почте</p>
+                </figure>
+            </div>
+        </div>
+    </div>
+    <div class="reviews" id="reviews">
+        <div class="reviews_nokia reviews_nokia-black">
+            <div class="container">
+                <div class="reviews_flex-container">
+                    <div class="reviews_flex-container_info">
+                        <h2>NOKIA 6700<br> BLACK</h2>
+                        <p>Консервативность и лаконичность<br> в дизайне</p>
+                    </div>
+                    <div class="reviews_flex-container_img img1"></div>
+                    <div class="reviews_flex-container_text">
+                        <p class="reviews_flex-container_text_name">Алексей</p>
+                        <p class="reviews_flex-container_text_age">28 лет</p>
+                        <p class="reviews_flex-container_text_quotes">,,</p>
+                        <p class="reviews_flex-container_text_description">Моноблок страрого поколения, когда аксессуары делали надежные. Неоспоримые плюсы заключаются в дизайне, эргономике, долгом заряде. Может быть я и человек старых взглядов, но телефон должен быть кнопочным.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="reviews_nokia reviews_nokia-silver">
+            <div class="container">
+                <div class="reviews_flex-container">
+                    <div class="reviews_flex-container_info">
+                        <h2 class="reviews_flex-container_info_h2-silver">NOKIA 6700<br> SILVER</h2>
+                        <p class="reviews_flex-container_info_p-silver">Возрождение классики с серебряным<br> оттенком</p>
+                    </div>
+                    <div class="reviews_flex-container_img img2"></div>
+                    <div class="reviews_flex-container_text">
+                        <p class="reviews_flex-container_text_name">Татьяна</p>
+                        <p class="reviews_flex-container_text_age reviews_flex-container_text_age-gold">38 лет</p>
+                        <p class="reviews_flex-container_text_quotes">,,</p>
+                        <p class="reviews_flex-container_text_description reviews_flex-container_text_description-gold">Это бессмертный телефон, на какие поверхности он у меня только не падал, а до сих пор в состоянии близком к идеальному. Нокиа - это старая добрая классика, которая не подведет. Очень много функций, из недостатков могу выделить только сравнительно небольшой обьем памяти.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="reviews_nokia reviews_nokia-gold">
+            <div class="container">
+                <div class="reviews_flex-container">
+                    <div class="reviews_flex-container_info">
+                        <h2>NOKIA 6700<br> GOLD</h2>
+                        <p>Цвет для любителей блеска<br> ночных огней</p>
+                    </div>
+                    <div class="reviews_flex-container_img img3"></div>
+                    <div class="reviews_flex-container_text">
+                        <p class="reviews_flex-container_text_name">Олеся</p>
+                        <p class="reviews_flex-container_text_age reviews_flex-container_text_age-silver">23 года</p>
+                        <p class="reviews_flex-container_text_quotes">,,</p>
+                        <p class="reviews_flex-container_text_description reviews_flex-container_text_description-silver">Покупала несколько месяцев для работы. В условиях шумного офиса слышимость остается на высоте, мощнейшая батарея, можно преодолевать дальные растояния и не бояться за процент батареи. Изюминка дизайна в его однотонности, приобретение принесло много радости и пользы.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="footer_text">
+                <h2>Заказать Nokia 6700:</h2>
+                <p>Чтобы заказать телефон Nokia 6700 нажмите кнопку "Оформить заказ". Заполните все необходимые поля и нажмите кнопку "Заказать".</p>
+                <a data-fancybox data-src="#pop-up" href="javascript:;" id="order4">
+                    <div class="button">
+                        <button>Оформить заказ</button>
+                    </div>
+                </a>
+            </div>
+            <hr>
+            <div class="footer_info">
+                <p>&copy; Все права защищены 2017</p>
+                <a id="politic" data-fancybox data-src="#pop-up-politic" href="javascript:;">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </div>
+    <div class="pop-up" style="display: none;" id="pop-up">
+        <div class="containerForForm">
+            <h2>Оформить заказ</h2>
+            <form class="order-form" action="" method="POST" accepted-charset="utf-8">
+                <!--<input type="hidden" name="country" value="name="country" ">-->
+                <!--<input type="hidden" name="key" value="key">-->
+                <div class="form-group">
+                    <!--<label for="name_last" class="control-label">Фамилия:</label>-->
+                    <input type="text" class="form-control" placeholder="Имя" name="name" id="name" required>
+                </div>
+                <div class="form-group">
+                    <!--<label for="name_first" class="control-label">Имя:</label>-->
+                    <input type="text" class="form-control" placeholder="Телефон" name="phone" id="phone" required>
+                </div>
+                <div class="form-group button">
+                    <button type="submit" name="submit">ЗАКАЗАТЬ</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="pop-up-politic" style="display: none;" id="pop-up-politic">
+        <div class="containerForPolitic">
+            <h2>ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</h2>
+            <p>Наш интернет-магазин уважительно относится к правам клиента. Соблюдается строгая конфиденциальность при оформлении заказа. Сведения надёжно сохраняются и защищены от передачи. Согласием на обработку данных клиента исключительно с целью оказания услуг является размещение заказа на сайте. К персональным данным относится личная информация о клиенте: домашний адрес; имя, фамилия, отчество; сведения о рождении; имущественное, семейное положение; личные контакты (телефон, электронная почта) и прочие сведения, которые перечислены в Законе «О персональных данных». Клиент вправе отказаться от обработки персональных данных. Нами в данном случае гарантируется удаление с сайта всех персональных данных в трёхдневный срок в рабочее время. Подобный отказ клиент может оформить простым электронным письмом на адрес, указанный на странице нашего сайта.</p>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
+    <script src="slick/slick.js"></script>
+    <script src="js/show.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/forHtml.js"></script>
+</body>
+</html>

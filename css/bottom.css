@@ -1,0 +1,25 @@
+.footer {
+  height: 536px;
+  background: url("../img/footer/bg-footer.png") no-repeat 100% 100%;
+  background-size: cover; }
+  .footer .footer_text {
+    padding: 150px 0;
+    width: 85%;
+    margin: 0 auto; }
+    .footer .footer_text h2 {
+      text-align: center;
+      color: #ffffff;
+      font-family: PTSans-Bold;
+      font-size: 32px;
+      margin: 0 0 25px; }
+    .footer .footer_text p {
+      text-align: center;
+      color: #FFDEAD;
+      font-family: PTSans-Regular;
+      font-size: 20px;
+      margin: 0 0 50px; }
+  .footer .footer_info a, .footer .footer_info p {
+    font-family: PTSans-Regular;
+    font-size: 16px; }
+
+/*# sourceMappingURL=bottom.css.map */

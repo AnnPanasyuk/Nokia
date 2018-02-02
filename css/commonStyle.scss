@@ -1,0 +1,24 @@
+$blue: #5964f3;
+$main-yellow: #fff000;
+$grayForH: #373f49;
+$forCardWithHover: #e4e4e4;
+$pGray: #898989;
+$bgForCaption: #373f49;
+$forBoxShadow: #e4e4e4;
+$red: #f50b3c;
+$reviewsRed: #db5844;
+html {
+  body {
+    overflow-x: hidden;
+    .container {
+      width: 77%;
+      margin: 0 auto;
+      @media (min-width: 100px) and (max-width: 768px) {
+        width: 90%;
+      }
+      @media (min-width: 100px) and (max-width: 480px) {
+        width: 95%;
+      }
+    }
+  }
+}

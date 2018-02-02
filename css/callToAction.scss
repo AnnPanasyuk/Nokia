@@ -1,0 +1,98 @@
+.call-to-action {
+  padding: 125px 0;
+  background: url("../img/callToAction/bg-cta.png") no-repeat 100% 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  .call-to-action_row {
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    //width: 90%;
+    //margin: 0 auto;
+    background-color: #ffffff;
+    padding: 50px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    p {
+      display: inline-block;
+      -webkit-align-self: center;
+      -ms-flex-item-align: center;
+      align-self: center;
+      font-family: 'PTSans-Regular', sans-serif;
+      font-size: 20px;
+      color: $grayForH;
+      span {
+        display: inline-block;
+        color: $grayForH;
+        font-family: 'PTSans-Bold', sans-serif;
+        font-size: 20px;
+      }
+      @media (min-width: 481px) and (max-width: 1024px) {
+        width: 65%;
+      }
+      @media (min-width: 481px) and (max-width: 667px) {
+        font-size: 15px;
+        width: 60%;
+      }
+      @media (min-width: 481px) and (max-width: 568px) {
+        width: 55%;
+      }
+      @media (min-width: 100px) and (max-width: 480px) {
+        text-align: center;
+        width: 100%;
+      }
+    }
+    a {
+      margin: 0;
+      -webkit-align-self: center;
+      -ms-flex-item-align: center;
+      align-self: center;
+      button {
+        padding: 20px 25px;
+        @media (min-width: 100px) and (max-width: 768px) {
+          font-size: 18px;
+        }
+        @media (min-width: 100px) and (max-width: 667px) {
+          font-size: 16px;
+        }
+        @media (min-width: 100px) and (max-width: 568px) {
+          font-size: 14px;
+        }
+        @media (min-width: 100px) and (max-width: 480px) {
+          font-size: 20px;
+        }
+        @media (min-width: 100px) and (max-width: 320px) {
+          font-size: 18px;
+        }
+      }
+      @media (min-width: 100px) and (max-width: 480px) {
+        margin: 0 0 -155px;
+      }
+    }
+    @media (min-width: 100px) and (max-width: 480px) {
+      padding: 50px 50px 80px;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
+  }
+  @media (min-width: 100px) and (max-width: 480px) {
+    background: url("../img/callToAction/bg-ctaMb.png") no-repeat 100% 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+}

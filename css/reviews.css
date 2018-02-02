@@ -1,0 +1,59 @@
+.reviews .reviews_nokia-black {
+  background: url("../img/reviews/black.png") no-repeat 100% 100%;
+  background-size: cover; }
+.reviews .reviews_nokia-gold {
+  background: url("../img/reviews/gold.png") no-repeat 100% 100%;
+  background-size: cover; }
+.reviews .reviews_nokia-silver {
+  background: url("../img/reviews/silver.png") no-repeat 100% 100%;
+  background-size: cover; }
+.reviews .reviews_nokia {
+  padding: 30px 0; }
+  .reviews .reviews_nokia .reviews_flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .reviews .reviews_nokia .reviews_flex-container .reviews_flex-container_info {
+      padding: 60px 0 45px 0;
+      width: 35%; }
+      .reviews .reviews_nokia .reviews_flex-container .reviews_flex-container_info h2 {
+        font-size: 36px;
+        font-family: Futuris-Bold;
+        color: #ffffff;
+        text-align: center; }
+      .reviews .reviews_nokia .reviews_flex-container .reviews_flex-container_info p {
+        color: #ffffff;
+        text-align: center;
+        font-family: PTSans-Regular;
+        font-size: 16px; }
+    .reviews .reviews_nokia .reviews_flex-container .reviews_flex-container_img {
+      width: 15%; }
+    .reviews .reviews_nokia .reviews_flex-container .img1 {
+      background: url("../img/reviews/1.png") no-repeat 100% 100%;
+      background-size: contain; }
+    .reviews .reviews_nokia .reviews_flex-container .img2 {
+      background: url("../img/reviews/2.png") no-repeat 100% 100%;
+      background-size: contain; }
+    .reviews .reviews_nokia .reviews_flex-container .img3 {
+      background: url("../img/reviews/3.png") no-repeat 100% 100%;
+      background-size: contain; }
+    .reviews .reviews_nokia .reviews_flex-container .reviews_flex-container_text {
+      width: 50%; }
+      .reviews .reviews_nokia .reviews_flex-container .reviews_flex-container_text .reviews_flex-container_text_name {
+        font-size: 18px;
+        font-family: PTSans-Bold;
+        color: red; }
+      .reviews .reviews_nokia .reviews_flex-container .reviews_flex-container_text .reviews_flex-container_text_age {
+        font-family: PTSans-Regular;
+        font-size: 12px;
+        color: #ffffff; }
+      .reviews .reviews_nokia .reviews_flex-container .reviews_flex-container_text .reviews_flex-container_text_quotes {
+        font-family: PTSans-Regular;
+        font-size: 48px;
+        color: red; }
+      .reviews .reviews_nokia .reviews_flex-container .reviews_flex-container_text .reviews_flex-container_text_description {
+        font-family: PTSans-Italic;
+        font-size: 16px;
+        color: #ffffff; }
+
+/*# sourceMappingURL=reviews.css.map */

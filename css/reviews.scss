@@ -1,0 +1,213 @@
+.reviews {
+  .reviews_nokia-black {
+    background: url("../img/reviews/black.png") no-repeat 100% 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    @media (min-width: 100px) and (max-width: 480px) {
+      background: url("../img/reviews/mb/black.png") no-repeat 100% 100%;
+      -webkit-background-size: cover;
+      background-size: cover;
+    }
+  }
+  .reviews_nokia-gold {
+    background: url("../img/reviews/gold.png") no-repeat 100% 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    @media (min-width: 100px) and (max-width: 480px) {
+      background: url("../img/reviews/mb/Gold.png") no-repeat 100% 100%;
+      -webkit-background-size: cover;
+      background-size: cover;
+    }
+  }.reviews_nokia-silver {
+     background: url("../img/reviews/silver.png") no-repeat 100% 100%;
+     -webkit-background-size: cover;
+     background-size: cover;
+     @media (min-width: 100px) and (max-width: 480px) {
+       background: url("../img/reviews/mb/silver.png") no-repeat 100% 100%;
+       -webkit-background-size: cover;
+       background-size: cover;
+     }
+   }
+  .reviews_nokia {
+    padding: 30px 0;
+    .reviews_flex-container {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      .reviews_flex-container_info {
+        padding: 60px 0 45px;
+        width: 35%;
+        h2 {
+          font-size: 36px;
+          font-family: 'Futuris-Bold', sans-serif;
+          color: #ffffff;
+          text-align: center;
+          @media (min-width: 100px) and (max-width: 768px) {
+            font-size: 32px;
+          }
+          @media (min-width: 100px) and (max-width: 480px) {
+            font-size: 24px;
+            margin: 0 0 20px;
+          }
+        }
+        p {
+          color: #ffffff;
+          text-align: center;
+          font-family: 'PTSans-Regular', sans-serif;
+          font-size: 16px;
+          @media (min-width: 100px) and (max-width: 768px) {
+            font-size: 14px;
+          }
+        }
+        .reviews_flex-container_info_h2-silver, .reviews_flex-container_info_p-silver {
+          color: #383838;
+        }
+        @media (min-width: 100px) and (max-width: 480px) {
+          -webkit-box-ordinal-group: 3;
+          -webkit-order: 2;
+          -ms-flex-order: 2;
+          order: 2;
+          width: 60%;
+          padding: 75px 0 60px;
+        }
+      }
+      .reviews_flex-container_img {
+        width: 15%;
+        @media (min-width: 100px) and (max-width: 480px) {
+          -webkit-box-ordinal-group: 2;
+          -webkit-order: 1;
+          -ms-flex-order: 1;
+          order: 1;
+          width: 96px;
+          height: 234px;
+          margin: 0 0 0 30px;
+        }
+        @media (min-width: 100px) and (max-width: 320px) {
+          margin: 0;
+        }
+      }
+      .img1 {
+        background: url("../img/reviews/1.png") no-repeat 50% 50%;
+        -webkit-background-size: contain;
+        background-size: contain;
+      }
+      .img2 {
+        background: url("../img/reviews/2.png") no-repeat 50% 50%;
+        -webkit-background-size: contain;
+        background-size: contain;
+      }
+      .img3 {
+        background: url("../img/reviews/3.png") no-repeat 50% 50%;
+        -webkit-background-size: contain;
+        background-size: contain;
+      }
+      .reviews_flex-container_text {
+        width: 50%;
+        -webkit-align-self: center;
+        -ms-flex-item-align: center;
+        align-self: center;
+        .reviews_flex-container_text_name {
+          font-size: 18px;
+          font-family: 'PTSans-Bold', sans-serif;
+          color: $reviewsRed;
+          margin: 0 0 15px;
+          @media (min-width: 481px) and (max-width: 768px) {
+            font-size: 16px;
+          }
+          @media (min-width: 100px) and (max-width: 480px) {
+            -webkit-box-ordinal-group: 3;
+            -webkit-order: 2;
+            -ms-flex-order: 2;
+            order: 2;
+            text-align: center;
+          }
+        }
+        .reviews_flex-container_text_age {
+          font-family: 'PTSans-Regular', sans-serif;
+          font-size: 12px;
+          color: #ffffff;
+          @media (min-width: 100px) and (max-width: 768px) {
+            font-size: 11px;
+          }
+          @media (min-width: 100px) and (max-width: 480px) {
+            display: none;
+          }
+        }
+        .reviews_flex-container_text_quotes {
+          text-align: end;
+          -webkit-transform-origin: center center 1px;
+          -ms-transform-origin: center center 1px;
+          transform-origin: center center 1px;
+          -webkit-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+          font-family: 'PTSans-Regular', sans-serif;
+          font-size: 48px;
+          color: $reviewsRed;
+          margin: 15px 0 0;
+          @media (min-width: 100px) and (max-width: 768px) {
+            font-size: 44px;
+          }
+          @media (min-width: 100px) and (max-width: 480px) {
+            display: none;
+          }
+        }
+        .reviews_flex-container_text_description {
+          font-family: 'PTSans-Italic', sans-serif;
+          font-size: 16px;
+          color: #ffffff;
+          @media (min-width: 481px) and (max-width: 768px) {
+            font-size: 14px;
+          }
+          @media (min-width: 100px) and (max-width: 480px) {
+            -webkit-box-ordinal-group: 2;
+            -webkit-order: 1;
+            -ms-flex-order: 1;
+            order: 1;
+            margin: 0 0 30px;
+            text-align: center;
+          }
+        }
+        .reviews_flex-container_text_description-gold, .reviews_flex-container_text_age-gold, .reviews_flex-container_text_age-silver, .reviews_flex-container_text_description-silver {
+          color: #383838;
+        }
+        @media (min-width: 100px) and (max-width: 667px) {
+          width: 45%;
+          padding: 0 0 0 15px;
+        }
+        @media (min-width: 100px) and (max-width: 480px) {
+          -webkit-box-ordinal-group: 4;
+          -webkit-order: 3;
+          -ms-flex-order: 3;
+          order: 3;
+          width: 100%;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          margin: 30px 0 0;
+        }
+      }
+      @media (min-width: 100px) and (max-width: 480px) {
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}

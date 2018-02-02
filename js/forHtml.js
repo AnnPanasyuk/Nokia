@@ -1,0 +1,1 @@
+$(".fade").slick({dots:!1,infinite:!0,speed:500,fade:!0,cssEase:"linear"}),$(".one-time").slick({dots:!0,infinite:!0,speed:300,slidesToShow:1,adaptiveHeight:!0}),$(".containerForForm").fancybox({selector:'[data-fancybox="#order1, #order2_1, #order2_2, #order2_3, #order3, #order4"]',loop:!0}),$.fancybox.defaults.animationEffect="elastic";

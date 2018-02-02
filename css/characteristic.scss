@@ -1,0 +1,270 @@
+.characteristic {
+  padding: 100px 0 80px;
+  .characteristic_flex-container {
+    padding: 220px 0 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 0 0 50px;
+    .fade {
+      width: 50%;
+      margin: 0 0 0 100px;
+      .characteristic_fade_img {
+        height: 422px;
+        width: 100%;
+        @media (min-width: 100px) and (max-width: 480px) {
+          height: 252px;
+        }
+      }
+      .img1 {
+        background: url("../img/characteristic/all.png") no-repeat 50% 50%;
+        -webkit-background-size: contain;
+        background-size: contain;
+        @media (min-width: 100px) and (max-width: 480px) {
+          background: url("../img/characteristic/mb/1.png") no-repeat 50% 50%;
+          -webkit-background-size: contain;
+          background-size: contain;
+        }
+      }.img2 {
+         background: url("../img/characteristic/all2.png") no-repeat 50% 50%;
+         -webkit-background-size: contain;
+         background-size: contain;
+         @media (min-width: 100px) and (max-width: 480px) {
+           background: url("../img/characteristic/mb/2.png") no-repeat 50% 50%;
+           -webkit-background-size: contain;
+           background-size: contain;
+         }
+       }.img3 {
+          background: url("../img/characteristic/alll.png") no-repeat 50% 50%;
+          -webkit-background-size: contain;
+          background-size: contain;
+          @media (min-width: 100px) and (max-width: 480px) {
+            background: url("../img/characteristic/mb/3.png") no-repeat 50% 50%;
+            -webkit-background-size: contain;
+            background-size: contain;
+          }
+        }.img4 {
+           background: url("../img/characteristic/black-back.png") no-repeat 50% 50%;
+           -webkit-background-size: contain;
+           background-size: contain;
+           @media (min-width: 100px) and (max-width: 480px) {
+             background: url("../img/characteristic/mb/4.png") no-repeat 50% 50%;
+             -webkit-background-size: contain;
+             background-size: contain;
+           }
+         }.img5 {
+            background: url("../img/characteristic/gold-back.png") no-repeat 50% 50%;
+            -webkit-background-size: contain;
+            background-size: contain;
+            @media (min-width: 100px) and (max-width: 480px) {
+              background: url("../img/characteristic/mb/5.png") no-repeat 50% 50%;
+              -webkit-background-size: contain;
+              background-size: contain;
+            }
+          }.img6 {
+             background: url("../img/characteristic/gold-front.png") no-repeat 50% 50%;
+             -webkit-background-size: contain;
+             background-size: contain;
+             @media (min-width: 100px) and (max-width: 480px) {
+               background: url("../img/characteristic/mb/6.png") no-repeat 50% 50%;
+               -webkit-background-size: contain;
+               background-size: contain;
+             }
+           }.img7 {
+              background: url("../img/characteristic/silver-back.png") no-repeat 50% 50%;
+              -webkit-background-size: contain;
+              background-size: contain;
+              @media (min-width: 100px) and (max-width: 480px) {
+                background: url("../img/characteristic/mb/7.png") no-repeat 50% 50%;
+                -webkit-background-size: contain;
+                background-size: contain;
+              }
+            }.img8 {
+               background: url("../img/characteristic/silver1.png") no-repeat 50% 50%;
+               -webkit-background-size: contain;
+               background-size: contain;
+             }
+      .slick-prev {
+        z-index: 1;
+        left: -20px;
+        background: url("../img/characteristic/arrow-left.png") no-repeat 100% 100%;
+        -webkit-background-size: contain;
+        background-size: contain;
+        &:hover {
+          top: 208px;
+          left: -40px;
+          -webkit-border-radius: 30px;
+          border-radius: 30px;
+          background: url("../img/characteristic/arrow-left-active.png") no-repeat 100% 100%;
+          -webkit-background-size: contain;
+          background-size: contain;
+        }
+        @media (min-width: 100px) and (max-width: 667px) {
+          &:hover {
+            top: 207px;
+            left: -32px !important;
+          }
+        }
+        @media (min-width: 100px) and (max-width: 480px) {
+          &:hover {
+            top: 128px !important;
+          }
+        }
+      }
+      .slick-next {
+        right: -20px !important;
+        background: url("../img/characteristic/arrow-right.png") no-repeat 100% 100%;
+        -webkit-background-size: contain;
+        background-size: contain;
+        &:hover {
+          top: 213px;
+          right: -40px !important;
+          background: url("../img/characteristic/arrow-right-active.png") no-repeat 100% 100%;
+          -webkit-background-size: contain;
+          background-size: contain;
+        }
+        @media (min-width: 100px) and (max-width: 667px) {
+          &:hover {
+            top: 213px;
+            right: -32px !important;
+          }
+        }
+        @media (min-width: 100px) and (max-width: 480px) {
+          &:hover {
+            top: 132px !important;
+          }
+        }
+      }
+      .slick-arrow {
+        top: 210px;
+        width: 44px;
+        height: 44px;
+        &:hover {
+          width: 80px;
+          height: 80px;
+          border: none;
+          outline: none;
+          box-shadow: none;
+        }
+        &:before {
+          content: '';
+        }
+        @media (min-width: 100px) and (max-width: 667px) {
+          width: 35px;
+          height: 35px;
+          &:hover {
+            width: 60px;
+            height: 60px;
+          }
+        }
+        @media (min-width: 100px) and (max-width: 480px) {
+          top: 130px;
+          &:hover {
+            top: 132px;
+          }
+        }
+      }
+      @media (min-width: 100px) and (max-width: 667px) {
+        margin: 0 0 0 60px;
+      }
+      @media (min-width: 100px) and (max-width: 480px) {
+        width: 230px;
+        margin: 0 auto;
+      }
+    }
+    .characteristic_flex-container_info {
+      width: 26%;
+      margin: 0 30px 0 0;
+      .characteristic_flex-container_info_row {
+        padding: 10px;
+        span {
+          font-family: 'PTSans-Bold', sans-serif;
+          font-size: 18px;
+          color: $grayForH;
+          @media (min-width: 481px) and (max-width: 768px) {
+            font-size: 16px;
+          }
+        }
+        p {
+          color: $grayForH;
+          font-family: 'PTSans-Regular', sans-serif;
+          font-size: 16px;
+          @media (min-width: 481px) and (max-width: 768px) {
+            font-size: 14px;
+          }
+        }
+        &:nth-child(odd) {
+          background-color: #f9f9f9;
+        }
+      }
+      @media (min-width: 100px) and (max-width: 480px) {
+        width: 250px;
+        margin: 0 auto;
+      }
+    }
+    @media (min-width: 100px) and (max-width: 480px) {
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
+  }
+  hr {
+    border: none;
+    background-color: #d1d1d1;
+    color: #d1d1d1;
+    width: 100%;
+    height: 2px;
+    margin: 0 0 50px;
+    @media (min-width: 100px) and (max-width: 480px) {
+      height: 1px;
+    }
+  }
+  .characteristic_flex-container2 {
+    padding: 0;
+    .characteristic_flex-container_info {
+      margin: 0 0 0 30px;
+      @media (min-width: 100px) and (max-width: 480px) {
+        width: 250px;
+        margin: 0 auto;
+        -webkit-box-ordinal-group: 3;
+        -webkit-order: 2;
+        -ms-flex-order: 2;
+        order: 2;
+      }
+    }
+    .characteristic_flex-container_front-tback {
+      -webkit-align-self: center;
+      -ms-flex-item-align: center;
+      align-self: center;
+      width: 58%;
+      height: 385px;
+      background: url("../img/characteristic/fron-tback.png") no-repeat 100% 50%;
+      -webkit-background-size: contain;
+      background-size: contain;
+      @media (min-width: 100px) and (max-width: 480px) {
+        -webkit-box-ordinal-group: 2;
+        -webkit-order: 1;
+        -ms-flex-order: 1;
+        order: 1;
+        width: 266px;
+        margin: 0 auto 50px;
+        background: url("../img/characteristic/frontback.png") no-repeat 50% 50%;
+        -webkit-background-size: contain;
+        background-size: contain;
+      }
+    }
+  }
+  @media (min-width: 100px) and (max-width: 480px) {
+    padding: 50px 0 80px;
+  }
+}

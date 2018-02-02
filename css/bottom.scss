@@ -1,0 +1,109 @@
+.footer {
+  //height: 536px;
+  background: url("../img/footer/bg-footer.png") no-repeat 50% 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  @media (min-width: 100px) and (max-width: 480px) {
+    background: url("../img/footer/footer-background.png") no-repeat 100% 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+  .footer_text {
+    padding: 125px 0;
+    width: 71%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    h2 {
+      text-align: center;
+      color: #ffffff;
+      font-family: 'PTSans-Bold', sans-serif;
+      font-size: 32px;
+      margin: 0 0 25px;
+      @media (min-width: 481px) and (max-width: 768px) {
+        font-size: 28px;
+      }
+    }
+    p {
+      text-align: center;
+      color: #fff000;
+      font-family: 'PTSans-Regular', sans-serif;
+      font-size: 20px;
+      margin: 0 0 50px;
+      @media (min-width: 100px) and (max-width: 768px) {
+        font-size: 16px;
+      }
+    }
+    a {
+      -webkit-align-self: center;
+      -ms-flex-item-align: center;
+      align-self: center;
+      margin: 0 auto;
+      button {
+        @media (min-width: 100px) and (max-width: 768px) {
+          font-size: 18px;
+          padding: 20px 35px;
+        }
+        @media (min-width: 100px) and (max-width: 768px) {
+          font-size: 18px;
+          padding: 20px 35px;
+        }
+      }
+    }
+    @media (min-width: 100px) and (max-width: 480px) {
+      padding: 80px 0;
+    }
+  }
+  hr {
+    border: none;
+    background-color: #ffffff;
+    color: #ffffff;
+    width: 100%;
+    height: 1px;
+  }
+  .footer_info {
+    padding: 10px 0 25px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    a, p {
+      margin: 0;
+      font-family: 'PTSans-Regular', sans-serif;
+      font-size: 16px;
+      color: #ffffff;
+      @media (min-width: 481px) and (max-width: 768px) {
+        font-size: 14px;
+      }
+      @media (min-width: 100px) and (max-width: 480px) {
+        width: 100%;
+        text-align: center;
+        margin: 0 0 10px;
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+    @media (min-width: 100px) and (max-width: 480px) {
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
+  }
+}
