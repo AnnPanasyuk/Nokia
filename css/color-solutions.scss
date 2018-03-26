@@ -20,6 +20,8 @@
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     figure {
+      -webkit-transition: .3s;
+      transition: .3s;
       width: 240px;
       margin: 0 auto;
       -webkit-border-radius: 8px;
@@ -57,16 +59,13 @@
       }
       .photo1 {
         background: url("../img/color-solutions/1.png") no-repeat 100% 100%;
-        -webkit-background-size: contain;
         background-size: contain;
       }
       .photo2 {
         background: url("../img/color-solutions/2.png") no-repeat 100% 100%;
-        -webkit-background-size: contain;
         background-size: contain;
       }.photo3 {
          background: url("../img/color-solutions/3.png") no-repeat 100% 100%;
-         -webkit-background-size: contain;
          background-size: contain;
        }
       .color-solutions_flex-container_price {
@@ -131,7 +130,6 @@
         width: 130px;
         height: 130px;
         background: url("../img/color-solutions/sale.png") no-repeat 100% 100%;
-        -webkit-background-size: contain;
         background-size: contain;
       }
       &:hover, &:focus {

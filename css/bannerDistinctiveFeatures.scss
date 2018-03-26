@@ -1,3 +1,7 @@
+button {
+  -webkit-transition: .3s;
+  transition: .3s;
+}
 a {
   outline: none;
   border: none;
@@ -11,7 +15,10 @@ a {
     box-shadow: 0 7px 27px rgba(254, 180, 1, 0.75);
     -webkit-border-radius: 30px;
     border-radius: 30px;
+    -webkit-transition: -webkit-box-shadow 0.2s;
+    transition: -webkit-box-shadow 0.2s;
     transition: box-shadow 0.2s;
+    transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
     button {
       -webkit-border-radius: 30px;
       border-radius: 30px;
@@ -46,10 +53,12 @@ a {
   }
 }
 .text {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=5)";
   width: 90%;
   position: relative;
   margin: 0 auto;
   .bg-for-caption {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=5)";
     position: absolute;
     top: 0;
     left: 0;
@@ -57,6 +66,7 @@ a {
     width: 100%;
     p {
       opacity: 0.05;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=5)";
       font-family: 'Futuris-Bold', sans-serif;
       font-size: 140px;
       text-align: center;
@@ -105,10 +115,11 @@ a {
   }
 }
 .banner-and-distinctive-features {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   position: relative;
   height: 1500px;
   background: url("../img/header/header-bg.png") no-repeat 50% 35%;
-  -webkit-background-size: cover;
   background-size: cover;
   @media (min-width: 100px) and (max-width: 1024px) {
     height: 1600px;
@@ -165,7 +176,7 @@ a {
     height: 100%;
   }
 
-  .layer-bg::before {
+  .layer-bg:before {
     content: " ";
     top: 0;
     left: 0;
@@ -180,25 +191,26 @@ a {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     background: url("../img/header/parallax.png") no-repeat 100% 100%;
-    -webkit-background-size: contain;
     background-size: contain;
     width: 100%;
     height: 100%;
     pointer-events: none;
   }
 
-  .clerfix::after, .clerfix::before {
+  .clerfix:after, .clerfix:before {
     content: ' ';
     display: table;
   }
 
-  .clerfix::after {
+  .clerfix:after {
     clear: both;
   }
 
 
 
   ul {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     width: 100%;
     position: absolute;
     top: 0;
@@ -208,7 +220,11 @@ a {
     padding: 40px 0;
     background-color: #f1f1f1;
     li {
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
       a {
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
         text-decoration: none;
         margin: 30px;
         color: $blue;
@@ -216,7 +232,7 @@ a {
         text-align: center;
         font-family: 'PTSans-Regular', sans-serif;
         position: relative;
-        &::after {
+        &:after {
           position: absolute;
           left: 35%;
           bottom: -65%;
@@ -228,15 +244,16 @@ a {
           -ms-transform: scaleX(0);
           transform: scaleX(0);
           opacity: 0;
+          -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
           -webkit-transition: all .4s linear;
-          -o-transition: all .4s linear;
           transition: all .4s linear;
         }
-        &:hover::after {
+        &:hover:after {
           -webkit-transform: scaleX(1);
           -ms-transform: scaleX(1);
           transform: scaleX(1);
           opacity: 1;
+          -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
         }
       }
     }
@@ -250,7 +267,6 @@ a {
     margin: 0 0 50px;
     .banner_badge-with-discount {
       background: url("../img/header/label.png") no-repeat 100% 100%;
-      -webkit-background-size: contain;
       background-size: contain;
       position: absolute;
       width: 184px;
@@ -376,6 +392,8 @@ a {
       button {
         font-size: 18px;
         padding: 20px 35px;
+        -webkit-transition: .3s;
+        transition: .3s;
         @media (min-width: 100px) and (max-width: 480px) {
           font-size: 20px;
           padding: 20px 40px;
@@ -443,6 +461,8 @@ a {
       flex-wrap: wrap;
       figure {
         width: 24%;
+        -webkit-transition: .3s;
+        transition: .3s;
         -webkit-border-radius: 8px;
         border-radius: 8px;
         padding: 30px 25px;
@@ -468,27 +488,21 @@ a {
           }
           .img1 {
             background: url("../img/distinctive-features/1.png") no-repeat 100% 0%;
-            -webkit-background-size: contain;
             background-size: contain;
           }.img2 {
              background: url("../img/distinctive-features/2.png") no-repeat 100% 0%;
-             -webkit-background-size: contain;
              background-size: contain;
            }.img3 {
               background: url("../img/distinctive-features/3.png") no-repeat 100% 0%;
-              -webkit-background-size: contain;
               background-size: contain;
             }.img4 {
                background: url("../img/distinctive-features/4.png") no-repeat 100% 0%;
-               -webkit-background-size: contain;
                background-size: contain;
              }.img5 {
                 background: url("../img/distinctive-features/5.png") no-repeat 100% 0%;
-                -webkit-background-size: contain;
                 background-size: contain;
               }.img6 {
                  background: url("../img/distinctive-features/6.png") no-repeat 100% 0%;
-                 -webkit-background-size: contain;
                  background-size: contain;
                }
           @media (min-width: 100px) and (max-width: 667px) {
@@ -498,27 +512,21 @@ a {
             }
             .img1 {
               background: url("../img/distinctive-features/1-hover.png") no-repeat 100% 0%;
-              -webkit-background-size: contain;
               background-size: contain;
             }.img2 {
                background: url("../img/distinctive-features/2-hover.png") no-repeat 100% 0%;
-               -webkit-background-size: contain;
                background-size: contain;
              }.img3 {
                 background: url("../img/distinctive-features/3-hover.png") no-repeat 100% 0%;
-                -webkit-background-size: contain;
                 background-size: contain;
               }.img4 {
                  background: url("../img/distinctive-features/4-hover.png") no-repeat 100% 0%;
-                 -webkit-background-size: contain;
                  background-size: contain;
                }.img5 {
                   background: url("../img/distinctive-features/5-hover.png") no-repeat 100% 0%;
-                  -webkit-background-size: contain;
                   background-size: contain;
                 }.img6 {
                    background: url("../img/distinctive-features/6-hover.png") no-repeat 100% 0%;
-                   -webkit-background-size: contain;
                    background-size: contain;
                  }
           }
@@ -565,7 +573,6 @@ a {
         @media (min-width: 100px) and (max-width: 667px) {
           .img1 {
             background: url("../img/distinctive-features/1-hover.png") no-repeat 100% 0%;
-            -webkit-background-size: contain;
             background-size: contain;
           }
           .distinctive-features_flex-container_text__caption1 {
@@ -584,7 +591,6 @@ a {
         &:hover {
           .img1 {
             background: url("../img/distinctive-features/1-hover.png") no-repeat 100% 0%;
-            -webkit-background-size: contain;
             background-size: contain;
           }
           .distinctive-features_flex-container_text__caption1 {
@@ -595,7 +601,6 @@ a {
          &:hover {
            .img2 {
              background: url("../img/distinctive-features/2-hover.png") no-repeat 100% 0%;
-             -webkit-background-size: contain;
              background-size: contain;
            }
            .distinctive-features_flex-container_text__caption2 {
@@ -606,7 +611,6 @@ a {
           &:hover {
             .img3 {
               background: url("../img/distinctive-features/3-hover.png") no-repeat 100% 0%;
-              -webkit-background-size: contain;
               background-size: contain;
             }
             .distinctive-features_flex-container_text__caption3 {
@@ -617,7 +621,6 @@ a {
            &:hover {
              .img4 {
                background: url("../img/distinctive-features/4-hover.png") no-repeat 100% 0%;
-               -webkit-background-size: contain;
                background-size: contain;
              }
              .distinctive-features_flex-container_text__caption4 {
@@ -628,7 +631,6 @@ a {
             &:hover {
               .img5 {
                 background: url("../img/distinctive-features/5-hover.png") no-repeat 100% 0%;
-                -webkit-background-size: contain;
                 background-size: contain;
               }
               .distinctive-features_flex-container_text__caption5 {
@@ -639,7 +641,6 @@ a {
              &:hover {
                .img6 {
                  background: url("../img/distinctive-features/6-hover.png") no-repeat 100% 0%;
-                 -webkit-background-size: contain;
                  background-size: contain;
                }
                .distinctive-features_flex-container_text__caption6  {
@@ -650,7 +651,6 @@ a {
     }
     @media (min-width: 100px) and (max-width: 667px) {
       background: url("../img/header/parallax1.png") no-repeat 0% 100%;
-      -webkit-background-size: contain;
       background-size: contain;
     }
     @media (min-width: 100px) and (max-width: 667px) {
@@ -665,7 +665,6 @@ a {
   }
   @media (min-width: 100px) and (max-width: 480px) {
     background: url("../img/header/header-bg2.png") no-repeat 100% 40%;
-    -webkit-background-size: cover;
     background-size: cover;
     padding: 0 0 140px;
   }
